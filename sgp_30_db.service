@@ -1,0 +1,15 @@
+[Unit]
+Description=Simple SGP 30 Python Server
+After=network.target
+
+[Service]
+User=<YourUsername>
+Type=simple
+WorkingDirectory=<PathToWorkingDirectory>
+# Example: dialect+driver://username:password@host:port/database
+Environment=DB_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# ExecStart=gunicorn --bind 0.0.0.0:4477 REST_Server:app
+ExecStart=XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+[Install]
+WantedBy=multi-user.target
